@@ -2,7 +2,6 @@ package com.qa.account.application;
 
 public class Account {
 	
-
 	private String firstName;
 	private String lastName;
 	private String accountNumber;
@@ -15,6 +14,7 @@ public class Account {
 
 	public String getFirstName() {
 		return firstName;
+				
 	}
 
 	public void setFirstName(String firstName) {

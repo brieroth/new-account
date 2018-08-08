@@ -19,7 +19,7 @@ public class Service {
 	public Account getAccountByKey(String key) {
 		return this.accounts.get(key);
 	}
-
+	
 	public HashMap<String, Account> getAccounts() {
 		return accounts;
 	}
@@ -27,7 +27,16 @@ public class Service {
 	public void setAccounts(HashMap<String, Account> accounts) {
 		this.accounts = accounts;
 	}
-	
+
+//	public Object getFirstNameCount(String string) {
+//		int count= 0;
+//		getAccounts(getFirstName);
+//		
+//		count++;
+//		return null;
+//	}
+
+
 	
 }
 
