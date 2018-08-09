@@ -28,7 +28,6 @@ public class Service {
 		this.accounts = accounts;
 	}
 
-
 	public int firstNameCount(String nameCount) {
 		return (int) accounts.values().stream().filter(Account -> Account.getFirstName().equals(nameCount)).count();
 
