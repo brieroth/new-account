@@ -19,7 +19,7 @@ public class Service {
 	public Account getAccountByKey(String key) {
 		return this.accounts.get(key);
 	}
-
+	
 	public HashMap<String, Account> getAccounts() {
 		return accounts;
 	}
@@ -27,7 +27,22 @@ public class Service {
 	public void setAccounts(HashMap<String, Account> accounts) {
 		this.accounts = accounts;
 	}
-	
-	
+
+//	public Object getFirstNameCount(String firstN) {
+//		int counter = 0 ;
+//		for(Account value : accounts.values()) {
+//				if(value.getFirstName().equals(firstN)) {
+//					counter++;
+//				}
+//			}
+//			System.out.println(counter);
+//			return counter;
+//	}
+//	
+	public int firstNameCount(String nameCount) {
+		return (int) accounts.values().stream().filter(Account -> Account.getFirstName().equals(nameCount)).count();
+
+	}
+
 }
 
