@@ -20,8 +20,9 @@ public class TDD {
 		 service = new Service();
 		 service.addAccount("11", new Account("Kev","Gates","32445"));
 		 service.addAccount("15", new Account("Kev","Olsen","54475"));
+		 service.addAccount("14", new Account("Kev","Forrest","458568"));
 		 service.getFirstNameCount("Kev");
-		 assertEquals(2, service.getFirstNameCount("Kev"));
+		 assertEquals(3, service.getFirstNameCount("Kev"));
 		 	}
 
 }
